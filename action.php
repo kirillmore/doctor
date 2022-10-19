@@ -24,6 +24,8 @@ else {//success
   $email_to = array($_POST['form__email']);
   sendMail($email_to,'Регистрация ко врачу','<p>Вы успешно зарегистрированы.</p><p>Информация...</p>',$config);
   //send mail to manager
+  $email_to = array('d.sazonov@hotdesk.ru');
+  sendMail($email_to,'Регистрация ко врачу','<p>Зарегистрирован клиент.</p><p>Информация...</p>',$config);
   mysql_query($query) or die(mysql_error());
   echo 'success';
 }
