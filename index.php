@@ -31,7 +31,7 @@ include("functions.php");
         <!-- ФИО: -->
         <div class="mb-3">
           <label for="form__fio" class="form-label">ФИО клиента:</label>
-          <input type="text" class="form-control" id="form__fio" name="form__fio" required>          
+          <input type="text" class="form-control" id="form__fio" name="form__fio" required autofocus>          
         </div>
         <!-- e-mail -->
         <div class="mb-3">
